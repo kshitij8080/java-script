@@ -1,0 +1,23 @@
+<html>
+<body>
+  <form>
+    Enter Username:
+    <input type="text" id="t1"><br><br>
+    Enter Password:&nbsp&nbsp	
+    <input type="password" id="t2"><br><br>
+    <input type="button" value="LOGIN" onclick="validate()">
+</form>
+</body>
+</html>
+<script>
+   function validate()
+     {
+         var u=document.getElementById("t1").value;
+         var p=document.getElementById("t2").value;
+          if(u==p)
+           window.location="shreeramlink.html";
+         else
+          alert("Invalid User Name Or Password....")
+     }
+</script>
+     

@@ -1,0 +1,23 @@
+<html>
+<body>
+<form>
+<font size="20">
+	<h1>Enter no:
+	<input type="number" id="t1"><br>
+	<input type="button" value="Print Table" onclick="show()"></h1>
+</font>
+</form>
+</body>
+</html>
+
+<script>
+	function show()
+ 	{
+	   var n=document.getElementById("t1").value;
+	   var n=parseInt(n);
+	   for(i=1;i<=10;i++)
+	   {
+   	       document.write("<br>"+i*n);
+	   }
+	}
+</script>

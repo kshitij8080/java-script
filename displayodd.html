@@ -1,0 +1,23 @@
+<html>
+<body>
+  <form>
+    Enter number:
+    <input type="text" id="t1"><br><br>
+    <input type="button" value="OK" onclick="disp_odd()">
+</form>
+</body>
+</html>
+<script>
+   function disp_odd()
+     {
+         var n=document.getElementById("t1").value;
+         n=parseInt(n);
+         var s=0;
+           for(i=1;i<=n;i++)
+           {
+             if(i%2==1)
+                document.write("<br>"+i);
+            }
+      }
+</script>
+     

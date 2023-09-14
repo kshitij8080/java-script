@@ -1,0 +1,27 @@
+<html>
+<body bgcolor="pink">
+  <form>
+    Enter number:&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="t1"><br><br>
+    Sum Of Digit:&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" id="t2"><br><br>
+    <input type="button" value="check" onclick="sum_digit()">
+</form>
+</body>
+</html>
+<script>
+   function sum_digit()
+     {
+         var n=document.getElementById("t1").value;
+         n=parseInt(n);
+         var s=0;
+         while(n>0)
+               {
+                   d=n%10;
+	s=s+d;
+	n=parseInt(n/10);
+               }
+                document.getElementById("t2").value=s;
+      }
+</script>
+     

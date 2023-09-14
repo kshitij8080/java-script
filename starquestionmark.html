@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+   Enter String:
+    <input type="text" id="n1"><br>
+  <input type="button" value="OK" onclick="op()">
+</form>
+</body>
+</html>
+ 
+<script>
+    function op()
+   {
+       var s1=document.getElementById("n1").value;
+       for(i=0;i<s1.length;i++)
+       {
+            if(s1.charAt(i)==' ')
+               document.write("jay ");
+           else
+           if(s1.charAt(i)>='0'&&s1.charAt(i)<='9')
+                document.write("shree ");
+           else
+             document.write(s1.charAt(i));
+       }
+   }
+</script>
